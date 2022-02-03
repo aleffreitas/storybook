@@ -1,16 +1,3 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
-interface TaskProps {
-  task: {
-    id: string;
-    title: string;
-    state: string;
-  }
-};
-
-// export default Task;
-
 
 export default function Task({ task: { id, title, state }, onArchiveTask, onPinTask }) {
   return (
